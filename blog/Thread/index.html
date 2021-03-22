@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Thread</title>
+  <style type = "text/css">
+    dummydeclaration {padding-left: 4em;}
+    tab1{padding-left: 2em;}
+  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <h1>Thread in Java </h1>
+  <p> Some from the lecture CS301 Software Development online video<p>
+
+  <h2>Why we need threads? </h2>
+  <p> <tab1>1. Speed up</tab1></p>
+  <p>  <tab1>2. Better class design</tab1></p>
+  <p>  <tab1>3. UI responsiveness</tab1></p>
+
+  <h2>General Process of implementing threads</h2>
+  <p>  <tab1>1. A class that implements interface Runnable</tab1></p>
+  <p>  <tab1>2. Runnable has one method: void run( )</tab1></p>
+  <p>  <tab1>3. Place thread action into run method</tab1></p>
+  <p>  <tab1>4. Construct object of runnable class</tab1></p>
+  <p>  <tab1>5. Construct thread from that object</tab1></p>
+  <p>  <tab1>6. Start thread</tab1></p>
+
+  <h2> Ways to switch threads</h2>
+  <p>  <tab1>1. yield( )</tab1></p>
+  <p>  <tab1>2. sleep(long mills) </tab1></p>
+
+  <h2>States of a thread</h2>
+  <p><tab1>start() --> Running</tab1></p>
+  <p><tab1>Running --> yield() --> Runnable</tab1></p>
+  <p><tab1>Running --> sleep()/wait() --> Blocked</tab1></p>
+  <p><tab1>Blocked --> notify()/notifyAll() --> Runnable</tab1></p>
+  <p><tab1>Runnable --> Running</tab1></p>
+  <h4>Notes:</h4>
+  <p><tab1>1. All states can directly go to terminated state</tab1></p>
+  <p><tab1>2. After the time in sleep() collapse, the thread goes to runnable state</tab1></p>
+
+  <h2>Terminating threads</h2>
+  <p><tab1>1. Natural death: dyingThread.join()  //passive waiting, better
+                               while (dyingThread.isAlive()){Thread.sleep(1000)}  //constantly checking</tab1></p>
+  <p><tab1>2. request for suicide: t.interrupt(); Use sleep() or wait() to sense interruptedException and do cleanup</tab1></p>
+
+  <h3>Code implementing thread: <a href="https://github.com/ssz1997/Java301/tree/master/CountDown"> GitHub</a></h3>
+
+
+</body>
+</html>

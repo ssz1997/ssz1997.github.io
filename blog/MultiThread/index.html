@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Thread</title>
+  <style type = "text/css">
+    dummydeclaration {padding-left: 4em;}
+    tab1{padding-left: 2em;}
+  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <h1> Multithread </h1>
+
+  <p> <tab1>If multiple threads read and write on the same trunk of memory, it will have unpredictable and often destructive results.</tab1></p>
+
+  <h2> Race Condition </h2>
+  <p> <tab1>A race condition occurs if the effect of multiple threads on shared data depends on the order in which threads are schedules.</tab1></p>
+
+  <h2> Solution </h2>
+  <p> <tab1> Thread can access can access object only one at a time.</tab1></p>
+  <p> <tab1> Java: synchronize access to shared objects - locks. Lock activated with keyword "synchronized".</tab1></p>
+
+  <h2> Example </h2>
+  <p><tab1>A full stack of cards consists of 52 cards and let four player pick cards.
+    If we don't have locks on the methods, eventually the sum of cards in each player's hand will not be 52, because multiple players are grabing and changing the number of cards in the stack simultaneously.
+    In contrast, if the methods have lock (are synchronized), the cards will be distributed evenly.</tab1></p>
+
+  <h3>Code implementing multithread: <a href="https://github.com/ssz1997/Java301/tree/master/Cards"> GitHub</a></h3>
+  <p><tab1></tab1></p>
+  <p> Note: Some from the lecture CS301 Software Development online video <p>
+
+</body>
+  </html>
