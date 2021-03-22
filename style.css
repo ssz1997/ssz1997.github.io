@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background: #162f51;
+   padding:40px;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+}
+header {
+  display: flex;
+  height: 30vh;
+  padding: 2vh;
+
+}
+
+nav {
+  width: 60vw;
+  padding: 0 2vh;
+}
+
+ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+ul a {
+  text-decoration: none;
+  color: #E1E155;
+  font-size: 22px;
+  padding-left: 35px;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;
+}
+
+
+
+.colleft {
+  float: left;
+  width: 75%;
+}
+
+#about .col{
+  float: left;
+  width: 50%;
+}
+#selfie{
+  width:90%;
+  height: auto;
+}
+#about h3 {
+  font-family: 'Comic Sans MS';
+  font-size: 50px;
+  margin-bottom: 9vh;
+  margin-top: 4vh;
+}
+#about p {
+  font-family: 'Barlow Condensed';
+  font-size: 24px;
+  margin-bottom: 8vh;
+}
+#about a {
+  font-family: 'Barlow Condensed';
+  font-size: 24px;
+  margin-bottom: 4vh;
+}
+
+
+#projects h3 {
+  font-family: 'Comic Sans MS';
+  font-size: 45px;
+  text-align: center;
+  margin-top: 50vh;
+
+}
+#projects h4{
+  font-family: 'Comic Sans MS';
+  font-size: 25px;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 8vh;
+}
+#projects .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+#projects .col {
+  width: 30vw;
+}
+
+#projects img {
+  padding: 10px;
+  width: 70%;
+  height: auto;
+  text-align: center;
+}
+
+#projects a {
+  font-size: 27px;
+  padding: 15px;
+  color: black;
+  display: block;
+  text-decoration: underline;
+  margin-left: 3.5vw;
+  font-family: 'Barlow Condensed';
+}
+#projects p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 20px;
+  margin-left: 5vw;
+  font-family: 'Barlow Condensed';
+}
+.colright {
+  float: left;
+  width: 25%;
+}
+#blogs h4 {
+  font-family: 'Barlow Condensed';
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#blogs p{
+  font-size: 20px;
+  font-family: 'Barlow Condensed';
+  padding-bottom: 2vh;
+}
+#blogs a{
+  font-size: 20px;
+  font-family: 'Barlow Condensed';
+  margin-left: 0;
+  padding-left: 1vw;
+  color: blue;
+  text-decoration: underline;
+}
+#blogs ul{
+  display: block;
+  list-style-type: disc;
+  margin-right: 0;
+  margin-left: 5vw;
+  padding-right: 0;
+}
+#blogs li{
+  padding-bottom: 1.5vh;
+}
+
+#contact {
+  height: 30vh;
+  padding: 10px;
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 45vh;
+  background: #162f51;
+  text-align: center;
+  width: 100%;
+}
+
+#contact h3 {
+  color: #ecc700;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  height: 48px;
+}
+
+#contact p {
+  color: white;
+  font-size: 24px;
+  padding: 5px;
+}
+
+#contact .fa {
+  padding: 20px 30px;
+  color: white;
+}
